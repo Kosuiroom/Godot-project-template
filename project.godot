@@ -74,12 +74,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Player/PlayerStates/PlayerState.gd"
 }, {
-"base": "Reference",
+"base": "Node",
 "class": "State",
 "language": "GDScript",
 "path": "res://Scripts/FSM/state.gd"
 }, {
-"base": "Reference",
+"base": "Node",
 "class": "StateMachine",
 "language": "GDScript",
 "path": "res://Scripts/FSM/statemachine.gd"
