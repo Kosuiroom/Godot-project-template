@@ -64,25 +64,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
 }, {
-"base": "KinematicBody2D",
+"base": "Reference",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Scripts/Player/Player.gd"
+"path": "res://StateMachine/PlayerStateExamples/Player.gd"
 }, {
 "base": "State",
 "class": "PlayerState",
 "language": "GDScript",
-"path": "res://Scripts/Player/PlayerStates/PlayerState.gd"
+"path": "res://StateMachine/PlayerState.gd"
 }, {
 "base": "Node",
 "class": "State",
 "language": "GDScript",
-"path": "res://Scripts/FSM/state.gd"
+"path": "res://StateMachine/State.gd"
 }, {
 "base": "Node",
 "class": "StateMachine",
 "language": "GDScript",
-"path": "res://Scripts/FSM/statemachine.gd"
+"path": "res://StateMachine/StateMachine.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
@@ -106,11 +106,14 @@ _global_script_class_icons={
 
 config/name="Godot-template"
 run/main_scene="res://Main.tscn"
-config/icon="res://icon.png"
 
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg" )
+
+[global]
+
+ico=false
 
 [input]
 
