@@ -107,6 +107,10 @@ _global_script_class_icons={
 config/name="Godot-template"
 run/main_scene="res://Main.tscn"
 
+[autoload]
+
+EventBuss="*res://Scripts/Autoloaded/EventBuss.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg" )
