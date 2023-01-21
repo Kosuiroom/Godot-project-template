@@ -1,10 +1,9 @@
 extends Control
 
 onready var audio = $Test/AudioStreamPlayer
+onready var action_list = $SettingTabs/Input/MarginContainer/VBoxContainer/ScrollContainer/ActionList
 
 
-func _on_Test_button_down():
-	audio.play()
 
 
 
