@@ -1,0 +1,20 @@
+name: Mirror and run GitLab CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Mirror + trigger CI
+      uses: SvanBoxel/gitlab-mirror-and-ci-action@master
+      with:
+        args: "https://gitlab.kosuiroom.com/redines/Tofuchomp"
+      env:
+        FORCE_PUSH: "false"
+        GITLAB_HOSTNAME: "gitlab.com"
+        GITLAB_USERNAME: "svboxel"
+        GITLAB_PASSWORD: ${{ secrets.GITLAB }} 
+        GITLAB_PROJECT_ID: "20"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} // https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
