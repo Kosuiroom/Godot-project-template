@@ -110,6 +110,7 @@ run/main_scene="res://Main.tscn"
 [autoload]
 
 EventBuss="*res://Scripts/Autoloaded/EventBuss.gd"
+KeyPersistance="*res://Scripts/Autoloaded/KeyPersistance.gd"
 
 [editor_plugins]
 
